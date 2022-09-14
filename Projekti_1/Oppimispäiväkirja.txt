@@ -1,0 +1,21 @@
+Tehtävän luettuani aloin miettiä, missä tämä tehtävä on mahdollista toteuttaa. Meillä on esimerkiksi yritys, jonka nimi on K. Siinä on työntekijöitä, jotka eivät työskentele yhdellä vakituisella paikalla, vaan vaihtavat sitä jatkuvasti. Esimerkiksi siivoojat. Ja työnantajan on tarkistettava, oliko työntekijä paikan päällä vai ei. Tällaisessa tehtävässä voit käyttää tätä tehtävää.
+
+Sitten piirsin kuvan muistivihkoon. mitä se tulee olemaan. kuin talo, jossa on neljä kulmaa. ja mies. meidän tapauksessamme tämä on piste, jolla on koordinaatit.
+
+Sen jälkeen on tarpeen määrätä tärkeimmät menetelmät, jotka tarkistavat, missä piste on, talomme keskustassa tai ulkopuolella. Tarkastukseen voidaan käyttää logiikkaa, että jos pidennetään vektoreita pisteestä eri suuntiin ja säde ylittää kohteen rajat kahdesti, niin piste on sisällä. toisessa tapauksessa piste on ulkopuolella. On myös tarpeen ottaa huomioon, että kohteen on oltava kuvio, ei suora viiva. joka auttaa tuulettamaan kulmien määrää.
+
+Päämenetelmien kirjoittamisen jälkeen päätän ensin asettaa koordinaatit itse ja kirjoittaa ne koodiin. ja jo kun määritän koodin, luo tiedostot, joihin tallennamme kohteen koordinaatit ja pisteen koordinaatit.
+
+monikulmion koordinaatit
+ Pisteet polygoni[] = {{0, 0}, {10, 0}, {10, 10}, {0, 10}};
+
+pisteen koordinaatit
+ Pisteet p = uusiPiste(5, 5);
+        System.out.println("Piste(" + p.x + ", " + p.y
+                + ") sijaitsee monikulmion sisällä: " + isInside(polygoni, n, p));
+
+sen jälkeen kun kaikki toimi. Päätin tehdä tiedostoja. ja kirjoita niiden koordinaatit. Seuraavaksi sinun on jo määritettävä tiedostojen luettavuus ja luotava uusi tiedosto.
+
+prosessin aikana minulla oli vaikeuksia sen kanssa, mitä tulostettiin yli 6 kertaa (pisteideni lukumäärä). mutta 24 kertaa. siksi ohjelma kirjoitti joka kerta lauseet objektin jokaiselle pisteelle erikseen. kun löysin ongelman ja korjasin sen. poisti lauseiden toiston.
+
+Ajatukseni. Olen tehnyt hienoa työtä. Minusta se on hyvä projekti. Harjoittelin taitojani, mutta ennen kaikkea opin prosessissa paljon. joten ymmärsin puutteeni ja aion työstää niitä. koska tämä on tärkein asia hyvälle asiantuntijalle, joksi haluan tulla. Pidin myös tehtävästä, jota voi jotenkin soveltaa elämässä. joten esimerkiksi jos jatkat ajatusta yrityksen ja työntekijöiden kanssa. voit lisätä koordinaatteja automaattisesti käyttämällä gps-seurantaa. Projektissani harkitsin taloa, joka koostuu neljästä kulmasta. tämä on klassinen talo. Mutta jos katsomme enemmän kulmia, niin mielestäni on välttämätöntä lisätä kulmien lukumäärä luetteloon. Mutta normaaleihin tehtäviin mielestäni 4 kulmaa riittää.

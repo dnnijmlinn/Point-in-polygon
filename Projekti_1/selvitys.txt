@@ -1,0 +1,12 @@
+Piste(15, 15) sijaitsee monikulmion sisällä: true
+
+Piste(10, 5) sijaitsee monikulmion sisällä: true
+
+Piste(3, 33) sijaitsee monikulmion sisällä: false
+
+Piste(0, 1) sijaitsee monikulmion sisällä: true
+
+Piste(35, 10) sijaitsee monikulmion sisällä: false
+
+Piste(-1, 10) sijaitsee monikulmion sisällä: false
+
